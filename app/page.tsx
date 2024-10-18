@@ -1,12 +1,10 @@
-import Image from "next/image";
+import MainContent from "./components/organisms/Main";
 import Maintemplate from "./components/Templates/Maintemplate";
 
 export default function Home() {
   return (
     <Maintemplate>
-    <div>
-      Hello World
-    </div>
+      <MainContent/>
     </Maintemplate>
   );
 }

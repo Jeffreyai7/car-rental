@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from '../organisms/NavBar'
+import Footer from '../organisms/Footer';
 
 interface Template{
     // header?: React.ReactElement;
@@ -12,6 +13,7 @@ const Maintemplate = ({children}: Template) => {
     <div>
         <NavBar/>
         {children}
+        <Footer/>
     </div>
   )
 }

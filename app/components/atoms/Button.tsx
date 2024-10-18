@@ -13,7 +13,7 @@ const Button = ({ children, className, onClick, disabled }: ButtonProps) => {
       <>
         <button
           className={Clm(
-            "block px-10  text-nowrap  text-[.9rem] rounded-[8px] hover:shadow-btn-hover transition-shadow ",
+            "block px-10  text-nowrap text-white  text-[.9rem] rounded-[8px] hover:btn-ghost transition-all ease-in duration-300",
             className,
             disabled ? "hover:shadow-0" : ""
           )}
