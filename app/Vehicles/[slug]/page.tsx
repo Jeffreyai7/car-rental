@@ -2,7 +2,6 @@
 import React from 'react'
 import { useParams } from 'next/navigation';
 import { cars } from '@/public/constants';
-import Button from '@/app/components/atoms/Button';
 import Booking from '@/app/components/molecules/Booking';
 
 const Vehiclepage = () => {

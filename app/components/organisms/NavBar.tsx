@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import Logo from '../atoms/Logo'
-import { IoFilterSharp } from "react-icons/io5";
 import { links } from '@/public/constants';
 import { usePathname } from 'next/navigation';
 // import menubtn from "@/public/assets/svg/menbtn.svg"
@@ -12,7 +11,6 @@ import { usePathname } from 'next/navigation';
 
 const NavBar = () => {
 const [isopened, setIsopened] = useState(false)
-const [isclosed, setIsclosed] = useState(false)
 
 const pathname = usePathname()
 
@@ -22,11 +20,7 @@ const handleclick = () => {
   console.log("I got clicked")
 }
 
-const handlesidebar = () => {
-  setIsopened(!isopened)
-}
 
-const [activeSection, setActiveSection] = useState(null)
 
 const handleScroll = (sectionId: string) =>{
   const section = document.getElementById(sectionId);
@@ -41,7 +35,7 @@ const handleScroll = (sectionId: string) =>{
       <div><Logo/></div>
       <ul className='hidden md:flex items-center justify-between w-2/4' >
       {
-        links.map((path, index) =>{
+        links.map((path) =>{
           return (
             <li key={path.id} className={`hover:text-orange-400 transition-all ease-linear ${pathname === path.link ? "activeline":""}`}><Link href={path.link}>{path.name}</Link></li>
           )

@@ -11,7 +11,7 @@ const Logistics = () => {
             <div><img className='mx-auto' src="/assets/svg/taxi.svg"  alt='operator'/><h3 className='py-2' >Select Car</h3><p className='py-2 w-[70%] mx-auto'>we offer a wide range of vehicles for all your driving needs. we have the perfect car to meet your needs</p></div>
             <div><img className='mx-auto' src="/assets/svg/gui-operator.svg" alt='vehicle' /><h3 className='py-2' >Contact Operator</h3><p className='py-2 w-[70%] mx-auto'>Our knowledgeable and friendly operators are always ready to help with any questions or concerns</p></div>
             <div>
-            <img className='mx-auto' src="/assets/svg/suv-vehicle.svg" alt="vehicle" /><h3 className='py-2'>Let's Drive</h3><p className='py-2 w-[70%] mx-auto'>Whether you are hitting the open road we've got you covered with our wide range of cars</p></div>
+            <img className='mx-auto' src="/assets/svg/suv-vehicle.svg" alt="vehicle" /><h3 className='py-2'>Let&apos;s Drive</h3><p className='py-2 w-[70%] mx-auto'>Whether you are hitting the open road we&apos;ve got you covered with our wide range of cars</p></div>
         </div>
     </section>  
   )
